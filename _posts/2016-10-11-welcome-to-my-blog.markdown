@@ -1,14 +1,39 @@
 ---
-title:  "Welcome to Jekyll!"
-date:   2016-01-08 15:04:23
-categories: [jekyll]
-tags: [jekyll]
+title:  "Welcome to my blog!"
+date:   2016-10-11 22:49:00
+categories: [personal]
+tags: [personal]
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve --watch`, which launches a web server and auto-regenerates your site when a file is updated.
+
+Hi!
+The motivation of this post is have an example of all that is possible in a jekyll post.
 
 To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
 
-Jekyll also offers powerful support for code snippets:
+Including images and resources:
+
+Including an image asset in a post:
+
+... which is shown in the screenshot below:
+![My helpful screenshot]({{ site.url }}/assets/screenshot.jpg)
+
+Linking to a PDF for readers to download:
+
+... you can [get the PDF]({{ site.url }}/assets/mydoc.pdf) directly.
+
+Code
+
+{% highlight ruby %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }s
+  end
+end
+{% endhighlight %}
+
+or
 
 ``` ruby
 def print_hi(name)
