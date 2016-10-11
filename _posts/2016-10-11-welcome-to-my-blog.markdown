@@ -15,7 +15,7 @@ Including images and resources:
 Including an image asset in a post:
 
 ... which is shown in the screenshot below:
-![My helpful screenshot]({{ site.url }}/assets/screenshot.jpg)
+![My helpful screenshot]({{ site.url }}/images/jekyll.png)
 
 Linking to a PDF for readers to download:
 
